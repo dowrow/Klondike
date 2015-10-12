@@ -9,7 +9,8 @@ public class MenuView implements View {
 	public MenuView(Menu menu) {
 		this.menu = menu;
 	}
-
+	
+	@Override
 	public void render() {
 		int maxOption = menu.getOptions().size();
 		IO io = new IO();
@@ -19,7 +20,7 @@ public class MenuView implements View {
 			int option = io.readInt("Opción? [1-" + maxOption + "]:");
 			validOption = isValid(option);
 			if (validOption) {
-				menu.getOptions().get(option - 1).getController();
+				menu.getOptions().get(option - 1).getView().render();
 			} else {
 				io.writeln("ERROR!!! La opción debe ser entre 1 y " + maxOption + " inclusives");
 			}

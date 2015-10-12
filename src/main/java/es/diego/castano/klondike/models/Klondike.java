@@ -19,7 +19,6 @@ public class Klondike {
 	Waste waste;
 	ArrayList<Foundation> foundations;
 	ArrayList<Tableau> tableaus;
-	MainMenu menu;
 	GameView gameView;
 	
 	public Klondike() {
@@ -27,8 +26,7 @@ public class Klondike {
 		waste = new Waste();
 		foundations = createFoundations();
 		tableaus = createTableaus();
-		menu = new MainMenu();
-		gameView = new GameView(menu);
+		gameView = new GameView(deck, waste, foundations, tableaus);
 	}
 	
 	private ArrayList<Tableau> createTableaus() {

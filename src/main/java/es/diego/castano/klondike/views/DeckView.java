@@ -2,7 +2,7 @@ package es.diego.castano.klondike.views;
 
 import es.diego.castano.klondike.models.cardstacks.Deck;
 
-public class DeckView {
+public class DeckView implements View {
 	
 	private Deck deck;
 	
@@ -10,6 +10,7 @@ public class DeckView {
 		this.deck = deck;
 	}
 	
+	@Override
 	public void render() {
 		IO io = new IO();
 		if (deck.isEmpty()) {

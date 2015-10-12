@@ -2,7 +2,7 @@ package es.diego.castano.klondike.views;
 
 import es.diego.castano.klondike.models.cards.Card;
 
-public class CardView {
+public class CardView implements View {
 	
 	private Card card;
 	
@@ -10,6 +10,7 @@ public class CardView {
 		this.card = card;
 	}
 	
+	@Override
 	public void render() {
 		IO io = new IO();
 		if (card.isFaceUp()) {

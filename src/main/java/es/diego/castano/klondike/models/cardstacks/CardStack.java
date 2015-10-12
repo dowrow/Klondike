@@ -37,5 +37,9 @@ public abstract class CardStack {
 		return this.cards.size();
 	}
 	
+	public Stack<Card> getCards() {
+		return this.cards;
+	}
+	
 	public abstract boolean isValidOnTop (Card card);
 }

@@ -4,7 +4,7 @@ import es.diego.castano.klondike.models.cards.Card;
 
 public class Waste extends CardStack {
 	
-	private static final int MAX_SIZE = 3;
+	public static final int MAX_SIZE = 3;
 	
 	@Override
 	public void putCardOnTop(Card card) {
