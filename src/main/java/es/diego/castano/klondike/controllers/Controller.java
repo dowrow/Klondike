@@ -9,10 +9,10 @@ import es.diego.castano.klondike.models.cardstacks.Tableau;
 
 public abstract class Controller {
 	
-	private Deck deck;
-	private Waste waste;
-	private ArrayList<Foundation> foundations;
-	private ArrayList<Tableau> tableaus;
+	protected Deck deck;
+	protected Waste waste;
+	protected ArrayList<Foundation> foundations;
+	protected ArrayList<Tableau> tableaus;
 	
 	public Controller (Deck deck, Waste waste, 
 			ArrayList<Foundation> foundations, 
@@ -22,4 +22,6 @@ public abstract class Controller {
 		this.foundations = foundations;
 		this.tableaus = tableaus;
 	}
+	
+	
 }

@@ -9,4 +9,9 @@ public class Tableau extends CardStack{
 		return true;
 	}
 	
+	public void flipTopCard() {
+		Card topCard = this.takeCardFromTop();
+		topCard.flip();
+		this.putCardOnTop(topCard);
+	}
 }
