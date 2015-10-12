@@ -1,6 +1,8 @@
-package es.diego.castano.klondike.views;
+package es.diego.castano.klondike.views.actions;
 
-import es.diego.castano.klondike.controllers.TableauToTableauController;
+import es.diego.castano.klondike.controllers.actions.TableauToTableauController;
+import es.diego.castano.klondike.views.IO;
+import es.diego.castano.klondike.views.View;
 
 public class TableauToTableauView implements View {
 	

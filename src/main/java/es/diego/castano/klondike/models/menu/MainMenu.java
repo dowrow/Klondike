@@ -2,28 +2,28 @@ package es.diego.castano.klondike.models.menu;
 
 import java.util.ArrayList;
 
-import es.diego.castano.klondike.controllers.DeckToWasteController;
-import es.diego.castano.klondike.controllers.ExitController;
-import es.diego.castano.klondike.controllers.FlipOnTableauController;
-import es.diego.castano.klondike.controllers.FoundationToTableauController;
-import es.diego.castano.klondike.controllers.TableauToFoundationController;
-import es.diego.castano.klondike.controllers.TableauToTableauController;
-import es.diego.castano.klondike.controllers.WasteToDeckController;
-import es.diego.castano.klondike.controllers.WasteToFoundationController;
-import es.diego.castano.klondike.controllers.WasteToTableauController;
+import es.diego.castano.klondike.controllers.actions.DeckToWasteController;
+import es.diego.castano.klondike.controllers.actions.ExitController;
+import es.diego.castano.klondike.controllers.actions.FlipOnTableauController;
+import es.diego.castano.klondike.controllers.actions.FoundationToTableauController;
+import es.diego.castano.klondike.controllers.actions.TableauToFoundationController;
+import es.diego.castano.klondike.controllers.actions.TableauToTableauController;
+import es.diego.castano.klondike.controllers.actions.WasteToDeckController;
+import es.diego.castano.klondike.controllers.actions.WasteToFoundationController;
+import es.diego.castano.klondike.controllers.actions.WasteToTableauController;
 import es.diego.castano.klondike.models.cardstacks.Deck;
 import es.diego.castano.klondike.models.cardstacks.Foundation;
 import es.diego.castano.klondike.models.cardstacks.Tableau;
 import es.diego.castano.klondike.models.cardstacks.Waste;
-import es.diego.castano.klondike.views.DeckToWasteView;
-import es.diego.castano.klondike.views.ExitView;
-import es.diego.castano.klondike.views.FlipOnTableauView;
-import es.diego.castano.klondike.views.FoundationToTableauView;
-import es.diego.castano.klondike.views.TableauToFoundationView;
-import es.diego.castano.klondike.views.TableauToTableauView;
-import es.diego.castano.klondike.views.WasteToDeckView;
-import es.diego.castano.klondike.views.WasteToFoundationView;
-import es.diego.castano.klondike.views.WasteToTableauView;
+import es.diego.castano.klondike.views.actions.DeckToWasteView;
+import es.diego.castano.klondike.views.actions.ExitView;
+import es.diego.castano.klondike.views.actions.FlipOnTableauView;
+import es.diego.castano.klondike.views.actions.FoundationToTableauView;
+import es.diego.castano.klondike.views.actions.TableauToFoundationView;
+import es.diego.castano.klondike.views.actions.TableauToTableauView;
+import es.diego.castano.klondike.views.actions.WasteToDeckView;
+import es.diego.castano.klondike.views.actions.WasteToFoundationView;
+import es.diego.castano.klondike.views.actions.WasteToTableauView;
 
 public class MainMenu extends Menu {
 	

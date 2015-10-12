@@ -1,6 +1,8 @@
-package es.diego.castano.klondike.views;
+package es.diego.castano.klondike.views.actions;
 
-import es.diego.castano.klondike.controllers.DeckToWasteController;
+import es.diego.castano.klondike.controllers.actions.DeckToWasteController;
+import es.diego.castano.klondike.views.IO;
+import es.diego.castano.klondike.views.View;
 
 public class DeckToWasteView implements View {
 
