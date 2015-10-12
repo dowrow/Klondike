@@ -1,5 +1,6 @@
 package es.diego.castano.klondike.views;
 
+import es.diego.castano.klondike.models.cards.Card;
 import es.diego.castano.klondike.models.cardstacks.Tableau;
 
 public class TableauView implements View {
@@ -16,11 +17,14 @@ public class TableauView implements View {
 		if (tableau.isEmpty()) {
 			io.write("<vacío>");
 		} else {
-			for (int i = 0; i < (tableau.getSize() - 1); i++) {
-				io.write("[");
+			for (int i = 0; i < tableau.getSize(); i++) {
+				Card card = tableau.getCards().get(i);
+				if (card.isFaceUp()) {
+					new CardView(card).render();
+				} else {
+					io.write("[");
+				}
 			}
-			new CardView(tableau.viewCardFromTop()).render();
 		}
 	}
-
 }
