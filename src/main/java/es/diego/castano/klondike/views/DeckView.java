@@ -3,6 +3,7 @@ package es.diego.castano.klondike.views;
 import es.diego.castano.klondike.models.cardstacks.Deck;
 
 public class DeckView {
+	
 	private Deck deck;
 	
 	public DeckView(Deck deck) {

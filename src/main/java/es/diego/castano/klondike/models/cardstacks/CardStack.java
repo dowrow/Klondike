@@ -32,4 +32,10 @@ public abstract class CardStack {
 	public boolean isEmpty() {
 		return this.cards.isEmpty();
 	}
+	
+	public int getSize() {
+		return this.cards.size();
+	}
+	
+	public abstract boolean isValidOnTop (Card card);
 }
