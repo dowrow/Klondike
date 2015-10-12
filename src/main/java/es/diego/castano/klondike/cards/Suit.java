@@ -2,9 +2,9 @@ package es.diego.castano.klondike.cards;
 
 public enum Suit {
 	OROS("o"),
+	COPAS("c"),
 	ESPADAS("e"),
-	BASTOS("b"),
-	COPAS("c");
+	BASTOS("b");
 	
 	private final String name;
 	
