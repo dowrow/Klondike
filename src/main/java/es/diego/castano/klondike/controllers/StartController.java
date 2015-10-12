@@ -25,9 +25,9 @@ public class StartController extends Controller {
 		for (int i = 0; i < Klondike.NUM_TABLEAUS; i++) {
 			for (int j = 0; j < (i + 1); j++) {
 				Card card = deck.takeCardFromTop();
-				tableaus.get(i).putCardOnTop(card);
+				tableaus.get(Klondike.NUM_TABLEAUS - 1 - i).putCardOnTop(card);
 			}
-			tableaus.get(i).flipTopCard();
+			tableaus.get(Klondike.NUM_TABLEAUS - 1 - i).flipTopCard();
 		}
 	}
 }
