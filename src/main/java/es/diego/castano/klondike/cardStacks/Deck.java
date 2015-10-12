@@ -25,5 +25,10 @@ public class Deck extends CardStack {
 	
 	public static void main(String args[]) {
 		Deck deck = new Deck();
+		while (!deck.isEmpty()) {
+			Card c = deck.takeCardFromTop();
+			c.flip();
+			System.out.println(c);
+		}
 	}
 }
