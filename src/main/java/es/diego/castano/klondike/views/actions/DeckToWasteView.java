@@ -15,7 +15,14 @@ public class DeckToWasteView implements View {
 	@Override
 	public void render() {
 		IO io = new IO();
-		io.writeln("Deck to waste view");
+		if (controller.isDeckEmpty()) {
+			io.writeln("ERROR!! La baraja no tiene más cartas.");	
+			return;
+		}
+		if (controller.isWasteEmpty()){
+			controller.move();
+		} else {
+			io.writeln("ERROR!! Ya hay cartas en el descarte.");
+		}
 	}
-
 }
