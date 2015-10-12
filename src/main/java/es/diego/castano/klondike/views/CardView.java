@@ -1,8 +1,9 @@
 package es.diego.castano.klondike.views;
 
-import es.diego.castano.klondike.cards.Card;
+import es.diego.castano.klondike.models.cards.Card;
 
 public class CardView {
+	
 	private Card card;
 	
 	public CardView(Card card) {
@@ -10,6 +11,11 @@ public class CardView {
 	}
 	
 	public void render() {
-		System.out.print(card.toString());
+		IO io = new IO();
+		if (card.isFaceUp()) {
+			io.write("[" + card.getNumber() + "," + card.getSuit() + "]");
+		} else {
+			io.write("[X,X]");
+		}
 	}
 }

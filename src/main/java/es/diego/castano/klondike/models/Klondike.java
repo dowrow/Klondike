@@ -1,4 +1,4 @@
-package es.diego.castano.klondike;
+package es.diego.castano.klondike.models;
 
 public class Klondike {
 	

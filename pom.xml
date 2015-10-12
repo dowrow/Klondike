@@ -39,10 +39,10 @@
 			</activation>
 			<properties>
 				<logs.level.root>debug</logs.level.root>
-                <database.user>root</database.user>
-                <database.password></database.password>
-                <database.url>jdbc:mysql://localhost:3306/spai</database.url>
-             
+				<database.user>root</database.user>
+				<database.password></database.password>
+				<database.url>jdbc:mysql://localhost:3306/spai</database.url>
+
 			</properties>
 		</profile>
 		<!-- mvn install -Denvironment.type=preproduction -->
@@ -56,10 +56,10 @@
 			</activation>
 			<properties>
 				<logs.level.root>info</logs.level.root>
-                <database.user>miwXX</database.user>
-                <database.password>123456</database.password>
-                <database.url>jdbc:mysql://localhost:3306/miwXX</database.url>
-                
+				<database.user>miwXX</database.user>
+				<database.password>123456</database.password>
+				<database.url>jdbc:mysql://localhost:3306/miwXX</database.url>
+
 			</properties>
 		</profile>
 		<!-- mvn install -Denvironment.type=production -->
@@ -73,10 +73,10 @@
 			</activation>
 			<properties>
 				<logs.level.root>error</logs.level.root>
-                <database.user>u3546</database.user>
-                <database.password>654321</database.password>
-                <database.url>jdbc:mysql://localhost:3306/u3546</database.url>
-                
+				<database.user>u3546</database.user>
+				<database.password>654321</database.password>
+				<database.url>jdbc:mysql://localhost:3306/u3546</database.url>
+
 			</properties>
 		</profile>
 	</profiles>

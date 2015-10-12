@@ -1,6 +1,7 @@
-package es.diego.castano.klondike.cards;
+package es.diego.castano.klondike.models.cards;
 
 public class Card {
+	
 	private Number number;
 	private Suit suit;
 	private boolean faceUp;
@@ -27,11 +28,4 @@ public class Card {
 		this.faceUp = !this.faceUp;
 	}
 	
-	public String toString() {
-		if (faceUp) {
-			return "[" + this.number + "," + this.suit + "]";
-		} else {
-			return "[x,x]";
-		}
-	}
 }

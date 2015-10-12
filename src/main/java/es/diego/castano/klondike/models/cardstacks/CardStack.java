@@ -1,11 +1,12 @@
-package es.diego.castano.klondike.cardStacks;
+package es.diego.castano.klondike.models.cardstacks;
 
 import java.util.Collections;
 import java.util.Stack;
 
-import es.diego.castano.klondike.cards.Card;
+import es.diego.castano.klondike.models.cards.Card;
 
 public abstract class CardStack {
+	
 	private Stack<Card> cards;
 	
 	public CardStack() {

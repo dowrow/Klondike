@@ -1,6 +1,6 @@
 package es.diego.castano.klondike.views;
 
-import es.diego.castano.klondike.cardStacks.Deck;
+import es.diego.castano.klondike.models.cardstacks.Deck;
 
 public class DeckView {
 	private Deck deck;
@@ -10,6 +10,12 @@ public class DeckView {
 	}
 	
 	public void render() {
-		System.out.print(deck.toString());
+		IO io = new IO();
+		if (deck.isEmpty()) {
+			io.write("<vacio>");
+		} else{
+			CardView cardView = new CardView(deck.viewCardFromTop());
+			cardView.render();
+		}
 	}
 }

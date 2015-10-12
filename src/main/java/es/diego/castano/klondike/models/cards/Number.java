@@ -1,6 +1,7 @@
-package es.diego.castano.klondike.cards;
+package es.diego.castano.klondike.models.cards;
 
 public enum Number {
+	
 	AS("A"), 
 	DOS("2"), 
 	TRES("3"), 
