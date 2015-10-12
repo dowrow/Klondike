@@ -15,7 +15,8 @@ public class ExitView implements View {
 	@Override
 	public void render() {
 		IO io = new IO();
-		io.writeln("Exit view");
+		io.writeln("Adios!!!");
+		controller.exit();
 	}
 
 }

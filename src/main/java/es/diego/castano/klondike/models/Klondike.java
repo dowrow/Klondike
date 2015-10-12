@@ -13,7 +13,6 @@ import es.diego.castano.klondike.views.GameView;
 public class Klondike {
 	
 	public static final int NUM_TABLEAUS = 7;
-	public static boolean playing = true;
 	
 	Deck deck;
 	Waste waste;

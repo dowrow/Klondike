@@ -14,4 +14,8 @@ public class ExitController extends Controller {
 		super(deck, waste, foundations, tableaus);
 	}
 
+	public void exit() {
+		System.exit(0);
+	}
+
 }

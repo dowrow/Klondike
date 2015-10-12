@@ -35,7 +35,7 @@ public class GameView implements View {
 			IO io = new IO();
 			renderStacks(io);
 			menuView.render();
-		} while(Klondike.playing);
+		} while(true);
 	}
 
 	private void renderStacks(IO io) {
