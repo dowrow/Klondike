@@ -15,7 +15,11 @@ public class WasteToDeckView implements View {
 	@Override
 	public void render() {
 		IO io = new IO();
-		io.writeln("Waste to deck view");
+		if (controller.isWasteEmpty()) {
+			io.writeln("ERROR!! No hay cartas en el descarte.");
+		} else {
+			controller.move();
+		}
 	}
 
 }

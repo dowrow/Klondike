@@ -23,4 +23,8 @@ public class Deck extends CardStack {
 		}
 		return false;
 	}
+
+	public void putCardOnBottom(Card card) {
+		this.getCards().insertElementAt(card, this.getSize());
+	}
 }
