@@ -15,7 +15,11 @@ public class WasteToFoundationView implements View {
 	@Override
 	public void render() {
 		IO io = new IO();
-		io.writeln("Waste to foundation view");
+		if (controller.isPossible()) {
+			controller.move();
+		} else {
+			io.writeln("ERROR!!! No se puede mover del descarte a ningún palo.");
+		}
 	}
 
 }

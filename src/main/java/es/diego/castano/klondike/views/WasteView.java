@@ -16,7 +16,7 @@ public class WasteView implements View {
 		if (waste.isEmpty()) {
 			io.write("<vacío>");
 		} else {
-			for (int i = 0; i < Waste.MAX_SIZE; i++) {
+			for (int i = 0; i < waste.getSize(); i++) {
 				new CardView(this.waste.getCards().get(i)).render();
 			}	
 		}
