@@ -8,7 +8,7 @@ import es.diego.castano.klondike.models.cardstacks.Foundation;
 import es.diego.castano.klondike.models.cardstacks.Tableau;
 import es.diego.castano.klondike.models.cardstacks.Waste;
 
-public class WasteToDeckController extends MoveController {
+public class WasteToDeckController extends MoveWasteController {
 
 	public WasteToDeckController(Deck deck, Waste waste, ArrayList<Foundation> foundations,
 			ArrayList<Tableau> tableaus) {
@@ -23,9 +23,4 @@ public class WasteToDeckController extends MoveController {
 			deck.putCardOnBottom(card);
 		}
 	}
-
-	public boolean isWasteEmpty() {
-		return waste.isEmpty();
-	}
-
 }
