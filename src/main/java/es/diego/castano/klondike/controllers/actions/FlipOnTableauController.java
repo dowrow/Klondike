@@ -15,4 +15,12 @@ public class FlipOnTableauController extends Controller {
 		super(deck, waste, foundations, tableaus);
 	}
 
+	public boolean isFaceUp(int tableauIndex) {
+		return tableaus.get(tableauIndex).viewCardFromTop().isFaceUp();
+	}
+	
+	public void flip(int tableauIndex) {
+		tableaus.get(tableauIndex).flipTopCard();
+	}
+
 }

@@ -16,7 +16,7 @@ public class WasteToDeckView implements View {
 	public void render() {
 		IO io = new IO();
 		if (controller.isWasteEmpty()) {
-			io.writeln("ERROR!! No hay cartas en el descarte.");
+			io.writeln("ERROR!!! No hay cartas en el descarte.");
 		} else {
 			controller.move();
 		}
