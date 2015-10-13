@@ -3,6 +3,7 @@ package es.diego.castano.klondike.views.actions;
 import es.diego.castano.klondike.controllers.actions.WasteToTableauController;
 import es.diego.castano.klondike.models.Klondike;
 import es.diego.castano.klondike.utils.IO;
+import es.diego.castano.klondike.utils.RangeSelector;
 import es.diego.castano.klondike.views.View;
 
 public class WasteToTableauView implements View {
@@ -17,26 +18,13 @@ public class WasteToTableauView implements View {
 	public void render() {
 		int tableauNumber;
 		IO io = new IO();
-		boolean isValid;
-		
+		RangeSelector selector = new RangeSelector();
 		if (controller.isWasteEmpty()) {
 			io.writeln("ERROR!!! No hay cartas en el descarte.");
 			return;
 		}
-		
-		do {
-			tableauNumber = io.readInt("A qué escalera? [1-" + Klondike.NUM_TABLEAUS + "]: ");	
-			isValid = isValid(tableauNumber);
-			if (!isValid) {
-				io.writeln("ERROR!!! La escalera seleccionada no es válida.");
-			}
-		} while (!isValid);
-		
-		controller.move(tableauNumber - 1);
+		tableauNumber = selector.read(1, Klondike.NUM_TABLEAUS, "A qué escalera?", "ERROR!! Escalera no válida");
+		controller.setTableauIndex(tableauNumber - 1);
+		controller.move();
 	}
-
-	private boolean isValid(int tableauNumber) {
-		return tableauNumber > 0 && tableauNumber <= Klondike.NUM_TABLEAUS;
-	}
-
 }
