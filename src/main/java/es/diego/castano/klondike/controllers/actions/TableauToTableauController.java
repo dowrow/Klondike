@@ -2,7 +2,6 @@ package es.diego.castano.klondike.controllers.actions;
 
 import java.util.ArrayList;
 
-import es.diego.castano.klondike.controllers.Controller;
 import es.diego.castano.klondike.models.cards.Card;
 import es.diego.castano.klondike.models.cardstacks.Deck;
 import es.diego.castano.klondike.models.cardstacks.Foundation;
