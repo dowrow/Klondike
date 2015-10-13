@@ -1,6 +1,7 @@
 package es.diego.castano.klondike.views;
 
 import es.diego.castano.klondike.models.cardstacks.Waste;
+import es.diego.castano.klondike.utils.IO;
 
 public class WasteView implements View {
 	

@@ -8,6 +8,7 @@ import es.diego.castano.klondike.models.cardstacks.Foundation;
 import es.diego.castano.klondike.models.cardstacks.Tableau;
 import es.diego.castano.klondike.models.cardstacks.Waste;
 import es.diego.castano.klondike.models.menu.MainMenu;
+import es.diego.castano.klondike.utils.IO;
 
 public class GameView implements View {
 

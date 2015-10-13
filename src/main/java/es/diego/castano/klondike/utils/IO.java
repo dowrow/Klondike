@@ -1,4 +1,4 @@
-package es.diego.castano.klondike.views;
+package es.diego.castano.klondike.utils;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;

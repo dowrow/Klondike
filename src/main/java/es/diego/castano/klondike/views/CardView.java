@@ -1,6 +1,7 @@
 package es.diego.castano.klondike.views;
 
 import es.diego.castano.klondike.models.cards.Card;
+import es.diego.castano.klondike.utils.IO;
 
 public class CardView implements View {
 	

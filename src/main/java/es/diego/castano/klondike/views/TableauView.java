@@ -2,6 +2,7 @@ package es.diego.castano.klondike.views;
 
 import es.diego.castano.klondike.models.cards.Card;
 import es.diego.castano.klondike.models.cardstacks.Tableau;
+import es.diego.castano.klondike.utils.IO;
 
 public class TableauView implements View {
 	
